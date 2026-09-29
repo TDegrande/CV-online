@@ -1,0 +1,326 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c1020;
+    color: #FFFFFF;
+}
+
+/* =========================
+   BANDEAU DU HAUT
+========================= */
+
+.navbar {
+    width: 100%;
+    
+    border-bottom: 1px solid #293044;
+}
+
+/* Contenu du bandeau */
+.nav-container {
+    max-width: 1120px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 90px;
+}
+
+/* Logo / nom */
+.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logo span {
+    color: #36e0e0;
+    margin-right: 10px;
+}
+
+
+/* Menu */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #bcc5df;
+    text-decoration: none;
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+
+/* Quand on passe la souris */
+nav a:hover {
+    color: white;
+    border-bottom: 2px solid #36e0e0;
+}
+
+
+/* Page sélectionnée */
+nav a.active {
+    color: white;
+    border-bottom: 2px solid #36e0e0;
+    border-bottom: 2px solid #36e0e0;
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.stage {
+    display: inline-block;
+
+    color: #2ee6df;
+    background-color: #0c3538;
+
+    border: 1px solid #176267;
+    border-radius: 50px;
+
+    padding: 8px 12px;
+}
+
+.titreclair {
+    font-family: "Courier New", monospace;
+    color: #2ee6df;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.point {
+    color: #2ee6df;
+}
+
+.sombre {
+    color: #b4b4b4;
+}
+
+.bouton {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    background-color: transparent;
+
+    border: 1px solid #29344f;
+    border-radius: 6px;
+
+    padding: 15px 22px;
+
+    margin-right: 10px;
+}
+
+.bouton:hover {
+    color: #2ee6df;
+    border-color: #2ee6df;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    border-top: 1px solid #29344f;
+    border-bottom: 1px solid #29344f;
+
+    padding: 30px 0;
+}
+.info {
+    display: flex;
+    gap: 5px;
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.presentation-texte {
+    flex: 1;
+}
+
+.presentation-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.presentation-photo img {
+    width: 430px;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+    border: 20px solid #141c30;
+
+    transform: rotate(2deg);
+}
+.recherche {
+    background-color: #121b31;
+
+    border-left: 3px solid #2ee6df;
+    border-radius: 0 10px 10px 0;
+
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.recherche h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.recherche p {
+    color: #aeb9d1;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.bouton-recherche {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 1px solid #29344f;
+    border-radius: 6px;
+
+    padding: 15px 20px;
+
+    margin-left: 30px;
+    white-space: nowrap;
+}
+
+.bouton-recherche:hover {
+    color: #2ee6df;
+    border-color: #2ee6df;
+}
+
+.parcours-carte {
+    background-color: #121b31;
+
+    border: 1px solid #29344f;
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+}
+
+.parcours-carte h2 {
+    color: white;
+}
+
+.date {
+    color: #2ee6df;
+    font-family: "Courier New", monospace;
+}
+
+.parcours-carte .sombre {
+    color: #aeb9d1;
+    line-height: 1.6;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tags span {
+    color: #b9c7e5;
+    background-color: #18243d;
+
+    border: 1px solid #30405e;
+    border-radius: 4px;
+
+    padding: 6px 10px;
+
+    font-size: 13px;
+}
+
+.timeline {
+    border-left: 2px solid #29344f;
+    padding-left: 26px;
+}
+
+.programme {
+    display: flex;
+    gap: 20px;
+
+}
+
+.programme-carte {
+    flex: 1;
+
+    background-color: #121b31;
+    border: 1px solid #29344f;
+    border-radius: 10px;
+
+    padding: 25px;
+}
+
+.programme-carte li {
+    margin-bottom: 12px;
+}
+
+.parcours-carte li {
+    margin-bottom: 15px;
+}
+
+.stage-entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer {
+    border-top: 1px solid #29344f;
+    margin-top: 60px;
+    padding: 25px 0;
+}
+
+.footer-container {
+    max-width: 1120px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+}
+
+.footer-droite {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-droite a {
+    color: #aeb9d1;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-droite a:hover {
+    color: #2ee6df;
+}
