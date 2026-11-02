@@ -324,3 +324,98 @@ nav a.active {
 .footer-droite a:hover {
     color: #2ee6df;
 }
+
+/* =========================
+   PAGE CONTACT
+========================= */
+
+.contact-intro {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.contact-intro h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+
+/* Liste des contacts */
+
+.contact-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Carte */
+
+.contact-carte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #121b31;
+
+    border: 1px solid #29344f;
+    border-radius: 10px;
+
+    
+    padding: 25px 30px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+
+/* Type : EMAIL / LINKEDIN / GITHUB */
+
+.contact-type {
+    color: #2ee6df;
+
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+/* Nom / adresse */
+
+.contact-carte h2 {
+    margin: 8px 0 0 0;
+
+    font-size: 20px;
+}
+
+
+/* Flèche */
+
+.contact-fleche {
+    color: #2ee6df;
+
+    font-size: 25px;
+
+    transition: 0.2s;
+}
+
+
+/* Survol */
+
+.contact-carte:hover {
+    border-color: #2ee6df;
+
+    transform: translateX(5px);
+}
+
+.contact-carte:hover .contact-fleche {
+    transform: translate(4px, -4px);
+}
